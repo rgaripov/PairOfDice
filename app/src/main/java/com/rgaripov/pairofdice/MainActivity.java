@@ -40,13 +40,13 @@ public class MainActivity extends AppCompatActivity {
         rollButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("Dice", "Button works!");
+//                Log.d("Dice", "Button works!");
 
                 Random randomNumberGenerator = new Random();
                 int number1 = randomNumberGenerator.nextInt(numberOfDots);
                 int number2 = randomNumberGenerator.nextInt(numberOfDots);
 
-                Log.d("Dice", "number1 is " + number1 + ", number2 is " + number2);
+//                Log.d("Dice", "number1 is " + number1 + ", number2 is " + number2);
 
                 leftDice.setImageResource(leftDiceArray[number1]);
                 rightDice.setImageResource(rightDiceArray[number2]);
